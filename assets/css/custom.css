@@ -1,0 +1,80 @@
+/* Add here all your CSS customizations */
+.custom-alert-msg-wrap{
+    padding: 15px;
+    padding-left: 70px;
+    position: relative;
+    min-width: 450px;
+    max-width: 600px;
+}
+.custom-alert-msg-wrap .close-btn {
+    font-size: 35px;
+    right: 10px;
+    top: 0px;
+    color: #fff;
+    opacity: 1;
+}
+.custom-alert-msg-wrap .alert-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.custom-alert-msg-wrap .alert-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.custom-alert-msg-wrap .title-name {
+    display: block;
+ /*   font-weight: 500;*/
+    font-size: 20px;
+}
+.custom-alert-msg-wrap .alert-mesg{
+    display: block;
+    line-height: 1.1;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.custom-alert-msg-wrap.alert-success {
+/*  background-color: #def2d6;*/
+    background:linear-gradient(to right, #8fc172 -80%, #42b17e 100%);
+    border-color: #cfdcc7;
+    color: #fff;
+}
+.custom-alert-msg-wrap.alert-danger{
+   /* background-color: #ebc8c4;*/
+    background:linear-gradient(to right, #d48c84 -20%, #dc4837 100%);
+    border-color: #d5b2b0;
+    color:#fff;
+}
+.custom-alert-msg-wrap.alert-danger p{
+    color: #fff;
+    margin:0;
+}
+.custom-alert-msg-wrap.alert-warning{
+    background-color: #f8f3d6;
+    border-color: #e6e3cb;
+}
+.custom-alert-msg-wrap.alert-info{
+    background-color: #cce8f4;
+    border-color: #b2cdd7;
+}
+.custom-alert-msg-wrap{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.parsley-errors-list{
+    padding: 2px;
+    margin: 0;
+    text-align: left;
+}
+
+.parsley-errors-list li {
+    color: red;
+    list-style: none;
+    padding: 0;
+}

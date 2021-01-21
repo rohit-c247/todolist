@@ -1,0 +1,309 @@
+
+
+@font-face {
+  font-family: 'MayWilde';
+  src: url('../fonts/MayWilde.eot');
+  src: url('../fonts/MayWilde.ttf') format('truetype'), url('../fonts/MayWilde.otf') format('otf');
+}
+
+
+/* ========== Theme common css ======== */
+
+*,
+::after,
+::before {
+  box-sizing: border-box
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+.theme-container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.theme-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+
+.col,
+.col-4,
+.col-6,
+.col-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%
+}
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%
+}
+
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%
+}
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%
+}
+
+
+/* common css start*/
+
+.full-wraper {
+  background-image: url(../images/wood-floor.jpg);
+  background-size: cover;
+}
+
+
+/* common css end*/
+
+
+/* form css start*/
+
+.form-section {
+  text-align: center;
+  max-width: 500px;
+  margin: 0px auto 15px auto;
+  padding: 0px 15px;
+}
+
+.form-section .form-heading {
+  font-family: 'MayWilde';
+  font-size: 44px;
+  margin: 15px 0px 10px 0px;
+}
+
+.input-block {
+  margin-bottom: 15px;
+}
+
+.form-block {
+  background: url(../images/form-background.png);
+  padding: 15px;
+  border-radius: 6px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-block .input-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #e2e2e2;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  font-family: 'Open Sans', sans-serif;
+  resize: none;
+}
+
+.comment-block {
+  width: 100%
+}
+
+.button-block {
+  color: #fff;
+  background-color: #411902;
+  border-color: #411902;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  margin-top: 15px;
+  width: 100px;
+}
+
+
+/* form css end*/
+
+
+/* text css start*/
+
+.text-content-block {
+  display: block;
+}
+
+.text-content-section .text-content-block {
+  position: relative;
+}
+
+.text-heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
+  padding: 24px 0px 10px 0px;
+}
+
+.text-sub-tile .date-wrap {
+  font-size: 13px;
+}
+
+.text-heading:first-word {
+  text-transform: capitalize;
+}
+
+.text-content-section .text-tile {
+  flex: 0 0 25%;
+  padding: 15px;
+  position: relative;
+  word-break: break-word;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+.text-content-section .text-sub-tile {
+  background-image: url(../images/sticky.png);
+  background-size: cover;
+  padding: 15px;
+  color: #000;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+section.text-content-section:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000000a6;
+  left: 0px;
+}
+
+.text-content-section {
+  border-top: 6px solid #000;
+  margin: 15px -15px;
+  padding: 0px 15px;
+  color: #fff;
+}
+
+.text-content {
+  text-align: left;
+  font-size: 12px;
+  padding: 15px 0px;
+  margin: 0px;
+  line-height: 20px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.custom-alert-msg-wrap .close-btn {
+  background: transparent;
+  border: none;
+}
+
+.delete_task {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  background: #000;
+  padding: 5px;
+  border-radius: 50%;
+  display: none;
+}
+
+.text-sub-tile:hover .delete_task {
+  display: block;
+}
+
+.delete_task img {
+  width: 100%
+}
+
+.parsley-errors-list {
+  padding: 2px;
+  margin: 0;
+  text-align: left;
+}
+
+.parsley-errors-list li {
+  color: #ff0707;
+  list-style: none;
+  padding: 0;
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+
+/* text css end*/
+
+#taskList li {
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+#taskList li.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s, top 1s;
+}
+
+
